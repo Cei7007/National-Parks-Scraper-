@@ -29,7 +29,10 @@ env/
 # Downloaded brochures and results
 national_parks_brochures/
 *.pdf
-*.json
+# Ignore JSON data files but not config files
+**/national_parks_brochures/*.json
+results*.json
+data*.json
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -55,3 +58,15 @@ Thumbs.db
 # Test files
 test_*.py
 *_test.py
+
+# Node.js / Vercel
+node_modules/
+.vercel
+.env
+.env.local
+.env*.local
+
+# Build outputs
+.next/
+out/
+dist/
